@@ -32,6 +32,7 @@ class ChangePassword extends Component {
   }
 
     render() {
+      if(this.props.ProviderId == 'password'){
       return (
       <form id="ChangePassword" role="form" onSubmit={this.onFormSubmit}>
         <h4> Change Password </h4>
@@ -52,6 +53,13 @@ class ChangePassword extends Component {
         <button type="submit" className="btn btn-primary">Change Password</button>
       </form>
     );
+      }
+      else{
+        return(
+          <div></div>
+        );
+      }
+
   }
 
 }

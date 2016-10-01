@@ -35,6 +35,7 @@ class UserProfile extends Component {
   }
 
   render() {
+    //var myImage = require("../../static/noImage.png");
     if (!this.props.currentUser) {
       return <Loading/>
     }
@@ -58,7 +59,7 @@ class UserProfile extends Component {
           </div>
           <button type="submit" className="btn btn-primary">Update</button>
         </form>
-        <ChangePassword/>
+          <ChangePassword ProviderId={this.props.currentUser.providerData[0].providerId} />        
       </div>
     )
   }
