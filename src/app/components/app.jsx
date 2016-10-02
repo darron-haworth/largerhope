@@ -105,11 +105,7 @@ function getProviderImage(providerData) {
       case "password":
         return '/static/noImage.png';
       case "facebook.com":
-        return providerData.photoURL;
-      case "github.com":
-        return providerData.imageUrl;
       case "google.com":
-        return providerData.photoURL;
       case "twitter.com":
         return providerData.photoURL;
       default:

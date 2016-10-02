@@ -35,7 +35,6 @@ class UserProfile extends Component {
   }
 
   render() {
-    //var myImage = require("../../static/noImage.png");
     if (!this.props.currentUser) {
       return <Loading/>
     }
